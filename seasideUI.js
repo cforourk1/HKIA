@@ -1,4 +1,4 @@
-[
+ const seasideResortFish = [
   {
     "fishname": "Citrusfin",
     "rarity": "Common",
