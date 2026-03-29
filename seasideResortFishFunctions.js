@@ -1,7 +1,7 @@
 /* this function will deal with inputting values for the currency qty based on rarity of fish to save me some time on data entry. It also gives me practice on writing functions
 */
 
-function currencyCalc(rarity, badtzCurrency) {
+function currencyCalc(rarity) {
   switch (rarity) {
     case "Common":
       return 1
@@ -22,7 +22,7 @@ function currencyCalc(rarity, badtzCurrency) {
 */
 
 
-function fwishBonus(rarity, fwishWellBonus) {
+function fwishBonus(rarity) {
   switch (rarity) {
     case "Common":
       return 1

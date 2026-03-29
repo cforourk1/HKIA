@@ -36,17 +36,19 @@ function createFish(row) {
     lure: row.lure ? row.lure : null,
     bonusCD: row.bonusCD ? row.bonusCD : null,
     bonusItem: row.bonusItem ? row.bonusItem : null,
-    fwishWellBonus: row.fwishWellBonus,
+/* calling functions in to deal with the spreadsheet rows for currency and fwish bonuses. these functions look at the rarity of the fish and fill in the data based on swith case function.
+*/
+    fwishWellBonus: fishFunct.fwishBonus(row.rarity),
     fishAlmanacReference: row.fishAlmanacReference.split(", "),
     badtzCurrency: row.badtzCurrency,
-    currencyQty: row.currencyQty,
+    currencyQty: fishFunct.currencyCalc(row.rarity),
     sizes: row.sizes.split(", "),
     caught: {
       tiny: false,
       regular: false,
       huge: false
-    },
-  };
+    }
+  }
 // pushing fish to another file.
     seasideResortFish.push(fish);
     return fish;
