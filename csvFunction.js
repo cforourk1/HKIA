@@ -1,12 +1,13 @@
 //This one goes with Seaside Resort
 const fs = require('fs');
 const csv = require('csv-parser');
+const fishFunct = require('./seasideResortFishFunctions.js');
 const seasideResortFish = require('./seasideResort.js');
 module.exports = seasideResortFish;
 const allFish = []
 
 
-  fs.createReadStream('seasideResort.csv')
+  fs.createReadStream('seasideResortFish.csv')
     .pipe(csv())
     .on('data', (row) => {
       createFish(row);
@@ -28,13 +29,13 @@ function createFish(row) {
     tags: row.tags.split(", "),
     region: row.region,
     locations: row.locations.split(", "),
-    dlcReq: row.dlcReq,
+    dlcReq: row.dlcReq ? row.dlcReq : null,
     timeOfDay: row.timeOfDay.split(", "),
-    weatherEvent: row.weatherEvent,
+    weatherEvent: row.weatherEvent ? row.weatherEvent : null,
     bait: row.bait,
-    lure: row.lure,
-    bonusCD: row.bonusCD,
-    bonusItem: row.bonusItem,
+    lure: row.lure ? row.lure : null,
+    bonusCD: row.bonusCD ? row.bonusCD : null,
+    bonusItem: row.bonusItem ? row.bonusItem : null,
     fwishWellBonus: row.fwishWellBonus,
     fishAlmanacReference: row.fishAlmanacReference.split(", "),
     badtzCurrency: row.badtzCurrency,

@@ -38,3 +38,5 @@ function fwishBonus(rarity, fwishWellBonus) {
 
   }
 }
+
+module.exports = {fwishBonus, currencyCalc};

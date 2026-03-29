@@ -1,0 +1,93 @@
+[
+  {
+    "fishname": "Citrusfin",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Coastal Clamfish",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Peppermint Tetra",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Seaweed Skipper",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Steamy Sunfish",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Summer Sole",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  },
+  {
+    "fishname": "Tropical Sunfish",
+    "sizes": [
+      "Tiny",
+      "Regular",
+      "Huge"
+    ],
+    "caught": {
+      "tiny": false,
+      "regular": false,
+      "huge": false
+    }
+  }
+]
