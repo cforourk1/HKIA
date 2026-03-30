@@ -10,5 +10,6 @@ function sortRarity(region, rarity) {
     const filterRarity = seasideResortFish.filter(fish => rarity === fish.rarity && region === fish.region)
     console.log(filterRarity, region)
     document.getElementById("rareFish").innerText = JSON.stringify(filterRarity, null, 2);
+    document.getElementById("fishCards").innerText = JSON.stringify(filterRarity, null, 2);
     return filterRarity
 }
