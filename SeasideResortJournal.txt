@@ -1,0 +1,14 @@
+3.29.26
+
+part 2 of the day - I spent a shit load more time on this. but I finally have clean good data - my first query worked and I am beginning to create a template that will design my cards for me. I am exhausted but learning.
+
+
+3.29.26
+
+Okay I finally got my data cleanly imported for one region. I am in the beginning phases of writing functions to handle data queries with script files for now. I am having Claude assess my code and guide me in the right direction without writing anything for me. anyways so far this project has really pushed me in ways I was not expecting and I found the thing that is driving me to be excited to learn more. I think this is a good thing.
+
+3.28.26
+
+I am going to use this as my diary as I move along in this project. I was unbelivably frustrated today as I was working through this. Getting CLEAN data is HARD. My frustrations around this was that the wiki has tiny icons and hard to track information. I have to visit four or five places to get all of the data I want so I am working on making something that gives the player exactly what they need to know all in one place. and a spot to track it. Challenges I ran into today included array problems and null values. I was going to be lazy and not include some information but the deeper I got into it the more I realized how much data is actual;ly here and how it could amplify game play. Today I wrote a lot dealing with the csv parser, the spreadhseet changes which were so damn many and haha figuring out my json files and making functions to fill in data for the bonuses and currencies. All in all I think I spent 10 hours working on this today just to get this far.
+
+
