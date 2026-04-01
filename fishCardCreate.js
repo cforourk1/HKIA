@@ -8,15 +8,34 @@ below you will see my first line I am creating a div element to wrap the entire 
 */
     const elm = document.createElement('div')
     elm.className = 'fishCard'
+// this portion calls the image
     const picture = document.createElement('img')
     picture.src = ''
+// class name for styling later
     picture.className = 'fishPic'
 /* the append feauture here ensures that the picture is actually inside my div tag
 */
     elm.appendChild(picture)
     const fishNames = document.createElement('h3')
+// this portion is the place holder for the name of the fish
     fishNames.className = 'fishNamePlate'
+// brings in the text I need
     fishNames.innerText = fish.fishname
     elm.appendChild(fishNames)
-    return elm
+/* creating the table data for the fish cards here
+*/
+const fishTable = document.createElement('table')
+    elm.appendChild(fishTable)
+//create the first row. Class name fishRow for style later.
+const rowOne = document.createElement('tr')
+    fishTable.appendChild(rowOne)
+// create the header of that row example - region
+const regionLabel = document.createElement('th')
+    regionLabel.innerText = 'Region'
+    rowOne.appendChild(regionLabel)
+// create a cell for the data to be held inside the row - example Seaside Resort
+const regionName = document.createElement('td')
+    regionName.innerText = fish.region
+    rowOne.appendChild(regionName)
+
 }
