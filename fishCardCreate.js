@@ -38,25 +38,32 @@ const regionLabel = document.createElement('th')
 const regionName = document.createElement('td')
     regionName.innerText = fish.region
     rowOne.appendChild(regionName)
-// time of day
+/*
+time of day label
+*/
 const timeLabel = document.createElement('th')
     timeLabel.innerText = 'Time of Day'
     rowOne.appendChild(timeLabel)
+/*
+time of day data
+*/
 const timeDay = document.createElement('td')
-    timeDay.innerText = fish.timeOfDay
+    timeDay.innerText = fish.timeOfDay.join(", ")
     rowOne.appendChild(timeDay)
-// row two
-
+/* .
+beginning of Row two
+*/
+// create row 2
 const rowTwo = document.createElement('tr')
     fishTable.appendChild(rowTwo)
-// create the header of that row example - region
-// th means table header and td means table data
-//const regionLabel = document.createElement('th')
-    regionLabel.innerText = 'Region'
-    rowOne.appendChild(regionLabel)
-// create a cell for the data to be held inside the row - example Seaside Resort
-//onst regionName = document.createElement('td')
-    regionName.innerText = fish.region
-    rowOne.appendChild(regionName)
+//location label
+    const locationLabel = document.createElement('th')
+    locationLabel.innerText = 'Locations'
+    rowTwo.appendChild(locationLabel)
+//location data
+    const location = document.createElement('td')
+// join adds the array to the cell. I might come back later and do a list instead of comma 
+    location.innerText = fish.locations.join(", ")
+    rowTwo.appendChild(location)
 
 }
