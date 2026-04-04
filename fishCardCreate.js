@@ -30,11 +30,32 @@ const fishTable = document.createElement('table')
 const rowOne = document.createElement('tr')
     fishTable.appendChild(rowOne)
 // create the header of that row example - region
+// th means table header and td means table data
 const regionLabel = document.createElement('th')
     regionLabel.innerText = 'Region'
     rowOne.appendChild(regionLabel)
 // create a cell for the data to be held inside the row - example Seaside Resort
 const regionName = document.createElement('td')
+    regionName.innerText = fish.region
+    rowOne.appendChild(regionName)
+// time of day
+const timeLabel = document.createElement('th')
+    timeLabel.innerText = 'Time of Day'
+    rowOne.appendChild(timeLabel)
+const timeDay = document.createElement('td')
+    timeDay.innerText = fish.timeOfDay
+    rowOne.appendChild(timeDay)
+// row two
+
+const rowTwo = document.createElement('tr')
+    fishTable.appendChild(rowTwo)
+// create the header of that row example - region
+// th means table header and td means table data
+//const regionLabel = document.createElement('th')
+    regionLabel.innerText = 'Region'
+    rowOne.appendChild(regionLabel)
+// create a cell for the data to be held inside the row - example Seaside Resort
+//onst regionName = document.createElement('td')
     regionName.innerText = fish.region
     rowOne.appendChild(regionName)
 
