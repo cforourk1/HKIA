@@ -14,14 +14,17 @@ function sortRarity(region, rarity) {
     return filterRarity
 }
 
-/*This function will loop through the card elements I made and create the postcards I am trying to create in html and add my json data
+/* This function will loop through the card elements I made and create the postcards I am trying to create in html and add my json data
+@param
+@returns
+
 */
 
-
-function cardTest(seasideResortFish) {
+function cardTest(fish) {
 const fishCard = document.getElementById("fishCards")
-    for (let i = 0; i < seasideResortFish.length; i++) {
-    let result = createCard(seasideResortFish[i])
+//
+    for (let i = 0; i < fish.length; i++) {
+    let result = createCard(fish[i])
     fishCard.append(result)
     }
 }
