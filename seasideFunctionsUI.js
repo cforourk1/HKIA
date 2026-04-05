@@ -13,3 +13,15 @@ function sortRarity(region, rarity) {
     document.getElementById("fishCards").innerText = JSON.stringify(filterRarity, null, 2);
     return filterRarity
 }
+
+/*This function will loop through the card elements I made and create the postcards I am trying to create in html and add my json data
+*/
+
+
+function cardTest(seasideResortFish) {
+const fishCard = document.getElementById("fishCards")
+    for (let i = 0; i < seasideResortFish.length; i++) {
+    let result = createCard(seasideResortFish[i])
+    fishCard.append(result)
+    }
+}
